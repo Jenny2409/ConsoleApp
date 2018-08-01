@@ -71,9 +71,10 @@ namespace ConsoleApp2
          Console.ReadKey();
           */
 
-//debuging test
 
-            double pi = 3.14;
+          
+         
+                double pi = 3.14;
             int intPi = (int)pi;
             Console.WriteLine("{0}", intPi);
 
@@ -85,7 +86,7 @@ namespace ConsoleApp2
              Console.ReadKey();
              
             
-            Console.WriteLine("Type your age here : ");
+            Console.Write("Type your age here : ");
             int age = Convert.ToInt32(Console.ReadLine());
 
             if ((age >= 5) && (age <= 7))
@@ -101,18 +102,20 @@ namespace ConsoleApp2
             {
                 Console.WriteLine("Go to the high school");
             }
-            else
-            {
-                Console.WriteLine("You are too old. Prepare the death");
-            }
+           
 
             if ((age < 14) || (age > 67))
             {
                 Console.WriteLine("You shouldn't work");
             }
+            else if ((age >= 15) || (age <= 66))
+            {
+                Console.WriteLine("You can work");
+            }
 
             Console.WriteLine("! true : " + (!true));
             Console.ReadKey();
+
         }
     }
 }
