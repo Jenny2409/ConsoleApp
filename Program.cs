@@ -71,7 +71,7 @@ namespace ConsoleApp2
          Console.ReadKey();
           */
 
-
+//debuging test
 
             double pi = 3.14;
             int intPi = (int)pi;
@@ -111,7 +111,7 @@ namespace ConsoleApp2
                 Console.WriteLine("You shouldn't work");
             }
 
-            Console.WriteLine("! true" + (!true));
+            Console.WriteLine("! true : " + (!true));
             Console.ReadKey();
         }
     }
