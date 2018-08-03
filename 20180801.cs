@@ -42,8 +42,8 @@ namespace ConsoleApp2
             */
 
             //while loop
-
-            /*  int i = 0;
+            /*
+             int i = 0;
               while (i < 20)
               {
                   if (i == 7)
@@ -63,31 +63,37 @@ namespace ConsoleApp2
                   i++;
 
               }
-              Console.ReadKey();*/
+              Console.ReadKey();
             //홀수만 나오게 하는데 왜 7은없고 그래? 그리고 만약에 i=7했을때 8부터 15까지 나오게 하는건 저첫두개의 if 문의 용도가 아닌가? 그리고 끝에 i++하는것도 왜?
-
+            */
             //do while
-
+            //선언
             /*string guess;
 
             do
             {
                 Console.WriteLine("Guess a Number");
+                //초기화
                 guess = Console.ReadLine();
             }
             while (!guess.Equals("15"));
+            //선언 + 초기화 방법 string guess = Console.ReadLine();
             */
 
-            //for 문
 
-            /*for (int i = 0; i < 10; i++) 
-            {
-                if ((i % 2) > 0)
-                {
-                    Console.Write(i);
-                    Console.ReadKey();
-                }
-            }*/
+            //for 문
+            /*
+          for (int i = 0; i < 10; i++) 
+          {
+              if ((i % 2) > 0)
+              {
+                  Console.Write(i+" "); //\n  \t
+
+              }
+          }
+          Console.ReadKey();
+          */
+
             //인강에서는 1,3,5,7,9가 한번에 떴는데 나는 왜 엔터쳐야지 뜨지? 밑에 foreach도 마찬가지!
 
             //foreach 문
@@ -97,12 +103,13 @@ namespace ConsoleApp2
              foreach (char a in randStr)
              {
                  Console.WriteLine(a);
-                 Console.ReadKey();
-             }*/
 
+             }
+              Console.ReadKey();
+              */
             //string
-
-            /* string sampString = "A bunch of random words";
+            /*
+            string sampString = "A bunch of random words";
 
              Console.WriteLine("Is empty " + String.IsNullOrEmpty(sampString));
              Console.WriteLine("Is empty " + String.IsNullOrWhiteSpace(sampString));
@@ -112,38 +119,43 @@ namespace ConsoleApp2
              Console.WriteLine("Index of bunch " + sampString.IndexOf("bunch"));
              Console.WriteLine("2nd Word " + sampString.Substring(2, 6));
 
-             Console.ReadKey();*/
+             Console.ReadKey();
+*/
+            /*
+                        string sampString = "  A bunch of random words  ";
+                        string sampString2 = "More random words";
+
+                        Console.WriteLine("Strings Equal? " + sampString.Equals(sampString2));
+
+                        Console.WriteLine("Start with \"A bunch\"" + sampString.StartsWith("A bunch"));
+
+                        Console.WriteLine("Ends with \"words\"" + sampString2.EndsWith("words"));
+
+                        Console.ReadKey();
+
+                        Console.WriteLine(sampString.Trim());
 
 
-            string sampString = "A bunch of random words";
-            string sampString2 = "More random words";
+                        Console.WriteLine(sampString.TrimEnd());
 
-            Console.WriteLine("Strings Equal? " + sampString.Equals(sampString2));
 
-            Console.WriteLine("Start with \"A bunch\"" + sampString.StartsWith("A bunch"));
-
-            Console.WriteLine("Ends with \"words\"" + sampString2.EndsWith("words"));
-
-            Console.ReadKey();
-
-            //뭐 공백을 없애는거?
-            //sampString = sampString.Trim(); sampString.TrimEnd(); sampString.TrimStart();
+                        Console.WriteLine(sampString.TrimStart()); */
 
             /*sampString = sampString.Replace("words", "characters");
             Console.WriteLine(sampString);
-           
+
             sampString = sampString.Remove(0, 2);
             Console.WriteLine(sampString);
 
-            Console.ReadKey();*/
+            Console.ReadKey(); */
 
             string[] names = new string[3] { "Matt", "Joe", "Paul" };
-            Console.WriteLine("Name List : " + String.Join(",", names)); //join 괄호안이 이해가 안됨
+            Console.WriteLine("Name List : " + String.Join("->", names)); //join 괄호안이 이해가 안됨
             Console.ReadKey();
 
 
-
-
+            Console.Write("baby");
+            Console.ReadKey();
         }
 
     }
